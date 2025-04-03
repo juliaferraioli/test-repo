@@ -49,6 +49,10 @@ body:
     id: asset-folder
     attributes:
        label: Shared folder for assets
+  - type: input
+    id: session-date
+    attributes:
+      label: Storytelling session date
   - type: markdown
     attributes:
       value: |
