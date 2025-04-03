@@ -1,0 +1,36 @@
+name: New Story Form
+description: Form to create a new story issue.
+title: "[Story]: "
+labels: ["story"]
+body:
+  - type: markdown
+    attributes: value: | 
+      Created from Cal.com webhook
+  - type: input
+    id: storyteller
+    attributes:
+      label: "Storyteller's name"
+  - type: input
+    id: facilitator
+    attributes:
+       label: "Facilitator's handle"
+  - type: input
+    id: coordinator
+    attributes:
+      label: "Coordinator's handle"
+  - type: input
+    id: editor
+    attributes:
+      label: "Editor's handle"
+  - type: input
+    id: publisher
+    attributes:
+      label: "Publisher's handle"
+  - type: checkboxes
+    id: self-scheduled
+    attributes:
+      label: Self-scheduled
+      options:
+        label: This session is self-scheduled
+       
+      
