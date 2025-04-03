@@ -4,8 +4,9 @@ title: "[Story]: "
 labels: ["story"]
 body:
   - type: markdown
-    attributes: value: | 
-      Created from Cal.com webhook
+    attributes: 
+      value: | 
+        Created from Cal.com webhook
   - type: input
     id: storyteller
     attributes:
