@@ -32,6 +32,6 @@ body:
     attributes:
       label: Self-scheduled
       options:
-        label: This session is self-scheduled
+        - label: This session is self-scheduled
        
       
