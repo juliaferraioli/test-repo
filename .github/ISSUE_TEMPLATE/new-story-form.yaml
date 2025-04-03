@@ -6,32 +6,89 @@ body:
   - type: markdown
     attributes: 
       value: | 
-        Created from Cal.com webhook
+        _Created from [Cal.com](https://cal.com) webhook_
   - type: input
     id: storyteller
     attributes:
-      label: "Storyteller's name"
-  - type: input
-    id: facilitator
-    attributes:
-       label: "Facilitator's handle"
+      label: Storyteller’s name
+    validations:
+      required: true
+  - type: markdown
+    attributes: 
+      value: | 
+        # Roles
   - type: input
     id: coordinator
     attributes:
-      label: "Coordinator's handle"
+      label: Coordinator’s handle
   - type: input
+    id: facilitator
+    attributes:
+       label: Facilitator’s handle
+  - type: input             
     id: editor
     attributes:
-      label: "Editor's handle"
+      label: Editor’s handle
   - type: input
     id: publisher
     attributes:
-      label: "Publisher's handle"
+      label: Publisher’s handle
   - type: checkboxes
     id: self-scheduled
     attributes:
-      label: Self-scheduled
+      label: Scheduling mode
       options:
         - label: This session is self-scheduled
-       
-      
+  - type: markdown
+    attributes: 
+      value: |
+        ## Scheduling
+        
+        - [ ] (coordinator) create storyteller’s folder in [shared drive](https://drive.google.com/drive/u/0/folders/1kxAHYikcWpp62aMU4-BCQbwfvFaEbjdF)
+  - type: input
+    id: asset-folder
+    attributes:
+       label: Shared folder for assets
+  - type: markdown
+    attributes:
+      value: |
+        ## Recording
+
+        - [ ] (facilitator) host session with storyteller
+        - [ ] (facilitator) upload recording to the folder that has been shared with you
+  - type: markdown
+    attributes:
+      value: |
+        ## Processing
+        
+        - [ ] (coordinator) trim/edit audio (if necessary)
+        - [ ] (coordinator) convert to 128kbps (if necessary)
+        - [ ] (coordinator) send to transcription service
+        - [ ] (coordinator) add transcription and files to shared folder
+  - type: markdown
+    attributes:
+      value: |
+        ## Editing
+        
+        - [ ] (editor) edit transcript for readability
+        - [ ] (editor) break into paragraphs
+        - [ ] (editor) fine-tune title
+        - [ ] (editor) add logical headings
+        - [ ] (editor) add a summary
+        - [ ] (editor) suggest tags (optional; see [opensourcestories.org/tags](https://www.opensourcestories.org/tags/) for existing tags)
+        - [ ] (editor) write copy for social media
+  - type: markdown
+    attributes:
+      value: |
+        ## Publishing
+        
+        - [ ] (publisher) upload recording to StoryCorps
+        - [ ] (publisher) upload recording to audio host
+        - [ ] (publisher) create PR
+        - [ ] (publisher) get review and merge
+  - type: markdown
+    attributes:
+      value: |
+        ## Promoting
+        
+        - [ ] (coordinator or publisher) schedule posts on various channels
